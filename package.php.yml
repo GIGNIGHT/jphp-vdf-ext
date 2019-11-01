@@ -1,0 +1,45 @@
+name: VDF
+version: 1.0
+description: Decode/Encode Valve Data Format
+
+plugins:
+  - Hub
+  - Doc
+
+sources:
+  - src
+
+doc:
+  stub-dirs: ['./src/']
+  langs: {en: English, ru: Русский}
+
+devDeps:
+  dn-bundle-plugin: '*'
+
+config:
+  ignore:
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /.gitignore
+  - /gradle/**
+  - /**.phpintel
+  - /bundle/**
+  - /src-bundle/**
+  - /build/**
+  - /vendor/**
+  - /jars/**
+  - /src-jvm/**
+  - /.gitignore
+  - /**.gradle
+  - /gradlew
+  - /gradlew.**
+
+develnext-bundle:
+  version: 1.0
+  name: VDF
+  description: Decode/Encode Valve Data Format
+  author: GIGNIGHT
+  icon: "develnext/bundle/vdf/vdf.png"
+  group: "system"
+  class: "develnext\\bundle\\vdf\\VDFBundle"
